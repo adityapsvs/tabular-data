@@ -6,6 +6,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+mongoose.connect("mongodb://root:4503@ds119395.mlab.com:19395/tabular?poolSize=10&retries=5", function(err) {
+  if(err) {
+    console.log("Mongoose Error", err);
+  }
+});
+
 var index = require('./routes/index');
 var users = require('./routes/users');
 
