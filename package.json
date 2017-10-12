@@ -2,13 +2,24 @@
   "name": "tabular-data",
   "version": "1.0.0",
   "description": "data storage in tabular form",
-  "main": "index.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aditya & Raj",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.7.9"
+    "angular": "^1.6.6",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "electron": "^1.7.9",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.12.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1",
+    "request": "^2.83.0",
+    "serve-favicon": "^2.4.5"
   }
 }
